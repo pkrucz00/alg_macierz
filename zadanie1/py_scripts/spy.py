@@ -1,4 +1,7 @@
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
-np.array([[2, 3, 4], [3, 4, 5], [4, 5, 6]])
+def spy(matrix):
+    mask = matrix == 0
+    plt.matshow(mask)
+    plt.show()
